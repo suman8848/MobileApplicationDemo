@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sumankhatiwada.firstapp.day1.MainActivity"
+    >
+
+    <LinearLayout
+
+        android:id="@+id/linear_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/name" />
+
+        <EditText
+
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/email" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_Subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_Header"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/et_subject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/subject" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_Body"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/linear_Subject"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:id="@+id/et_Message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="@string/message" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_Body"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            style="@android:style/Holo.Light.SegmentedButton"
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

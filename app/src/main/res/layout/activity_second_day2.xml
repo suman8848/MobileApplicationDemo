@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt_dinner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DinnerName"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+
+    <EditText
+        android:id="@+id/et_addFood"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add new food...."
+        />
+
+    <Button
+        android:id="@+id/btn_addFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Food"
+        android:layout_gravity="center"
+
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_decide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="Decide" />
+</LinearLayout>
+
+</LinearLayout>
