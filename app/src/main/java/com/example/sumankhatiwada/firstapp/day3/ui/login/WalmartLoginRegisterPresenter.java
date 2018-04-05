@@ -15,11 +15,7 @@ public class WalmartLoginRegisterPresenter {
     Users users = new Users();
 
     public boolean doLoginCheck(String userName, String password){
-//        Log.e("text","USer:"+userName+"----"+password);
         List<Users> domainUsername = users.getUsersList();
-        for (int i = 0; i<domainUsername.size();i++){
-            Log.e("list",domainUsername.get(i).getEmail());
-        }
         for(int i = 0; i<domainUsername.size();i++){
             if(domainUsername.get(i).getEmail().equals(userName) && domainUsername.get(i).getPassword().equals(password)){
                 Log.e("Sucess","Login Successful");

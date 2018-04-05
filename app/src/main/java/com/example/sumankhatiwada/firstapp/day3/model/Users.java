@@ -85,10 +85,6 @@ public class Users {
 
     public void addUser(Users user) {
         usersList.add(user);
-        for(Users users:usersList){
-            Log.e("ListSize",usersList.size()+""+users.getEmail());
-
-        }
     }
 
     @Override
