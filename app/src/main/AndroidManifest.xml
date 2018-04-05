@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sumankhatiwada.firstapp">
 
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -38,6 +40,7 @@
             android:label="SignUp"
             android:theme="@style/AppThemeNoActionBar"
             android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity android:name=".day3.ui.implicitintent.ImplicitIntentActivity"></activity>
     </application>
 
 </manifest>

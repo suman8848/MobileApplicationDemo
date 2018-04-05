@@ -10,6 +10,7 @@ import android.widget.ListView;
 
 import com.example.sumankhatiwada.firstapp.day2.ConverterActivity;
 import com.example.sumankhatiwada.firstapp.day2.DinnerDeciderActivity;
+import com.example.sumankhatiwada.firstapp.day3.ui.implicitintent.ImplicitIntentActivity;
 import com.example.sumankhatiwada.firstapp.day3.ui.login.WalmartLoginActivity;
 
 /**
@@ -18,7 +19,7 @@ import com.example.sumankhatiwada.firstapp.day3.ui.login.WalmartLoginActivity;
 
 public class MenuActivity extends ListActivity{
 
-    String [] menu = {"MainActivity","ConverterActivity","DinnerDeciderActivity","WalmartLoginActivity"};
+    String [] menu = {"MainActivity","ConverterActivity","DinnerDeciderActivity","WalmartLoginActivity","ImplicitIntent"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,6 +39,8 @@ public class MenuActivity extends ListActivity{
                 startActivity(new Intent(MenuActivity.this, DinnerDeciderActivity.class));
             }else if(position==3){
                 startActivity(new Intent(MenuActivity.this, WalmartLoginActivity.class));
+            }else if(position==4){
+                startActivity(new Intent(MenuActivity.this, ImplicitIntentActivity.class));
             }
     }
 }
