@@ -33,6 +33,7 @@ public class ConverterActivity extends BaseActivity {
     @Override
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         super.onViewReady(savedInstanceState, intent);
+        setToolbar("Convert");
     }
 
     @OnClick(R.id.btn_convert_submit)

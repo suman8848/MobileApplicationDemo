@@ -41,7 +41,7 @@ public class DinnerDeciderActivity extends BaseActivity implements DinnerDecider
     @Override
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         super.onViewReady(savedInstanceState, intent);
-
+        setToolbar("Decide Dinner");
         dinnerDeciderPresenter.setDefaultValueToList();
         onShowDinnerItem();
 

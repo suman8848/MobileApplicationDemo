@@ -5,10 +5,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
+import com.example.sumankhatiwada.firstapp.R;
+
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 /**
@@ -16,6 +20,10 @@ import butterknife.ButterKnife;
  */
 
 public abstract class BaseActivity extends AppCompatActivity {
+
+    @BindView(R.id.toolbar)
+    @Nullable
+    Toolbar mToolbar;
 
     protected abstract int getContentView();
 
@@ -33,6 +41,11 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected void showToast(Context context, String message) {
         Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
+    }
+    protected void setToolbar(String title) {
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+        getSupportActionBar().setTitle(title);
     }
 
     @Override

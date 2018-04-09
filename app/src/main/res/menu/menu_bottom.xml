@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_electronics"
+        android:enabled="true"
+        android:icon="@drawable/electronics_bottom"
+        android:title="Electronics"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_food"
+        android:enabled="true"
+        android:icon="@drawable/ic_food_bottom"
+        android:title="Food"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_clothing"
+        android:enabled="true"
+        android:icon="@drawable/ic_ribbon_tie_with_white_details"
+        android:title="Clothing"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_beauty"
+        android:enabled="true"
+        android:icon="@drawable/ic_female_eye_beauty_bottom"
+        android:title="Beauty"
+        app:showAsAction="always" />
+</menu>

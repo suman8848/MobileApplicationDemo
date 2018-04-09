@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="2"
+        android:title="@string/logout"
+        />
+
+    <!--<item-->
+        <!--android:id="@+id/deactivate"-->
+        <!--android:orderInCategory="1"-->
+        <!--android:title="@string/deactivate" />-->
+    <!--<item-->
+        <!--android:id="@+id/settings"-->
+        <!--android:orderInCategory="1"-->
+        <!--android:title="@string/action_settings" />-->
+
+</menu>
