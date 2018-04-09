@@ -68,6 +68,8 @@
                     android:layout_height="wrap_content"
                     android:text="Description Goes Here"
                     android:textSize="20sp"
+                    
+                    android:textAlignment="gravity"
                     android:id="@+id/txtview_electronics_item_desc"
                     />
                 </android.support.v7.widget.CardView>
