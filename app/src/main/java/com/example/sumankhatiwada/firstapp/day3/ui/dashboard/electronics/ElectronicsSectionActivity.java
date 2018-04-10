@@ -67,7 +67,7 @@ public class ElectronicsSectionActivity extends BaseActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(getResources().getColor(R.color.colorPrimary));
+            window.setStatusBarColor(getResources().getColor(R.color.colorPrimaryDark));
         }
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
@@ -77,9 +77,9 @@ public class ElectronicsSectionActivity extends BaseActivity {
 
     private void setDefaultElectronicData() {
         electronicItemList = new ArrayList<>();
-        electronicItemList.add(new ElectronicItem("HeadPhone","HeadPhone Description", R.drawable.headphone));
-        electronicItemList.add(new ElectronicItem("Mac 2015","Mac Description", R.drawable.mac));
-        electronicItemList.add(new ElectronicItem("Phone","Phone Description", R.drawable.phone));
+        electronicItemList.add(new ElectronicItem("Head Phone","Head Phone Description: "+getResources().getString(R.string.loream), R.drawable.headphone));
+        electronicItemList.add(new ElectronicItem("Mac 2015","Mac Description: "+ getResources().getString(R.string.loream), R.drawable.mac));
+        electronicItemList.add(new ElectronicItem("Smart Phone","Phone Description: "+ getResources().getString(R.string.loream), R.drawable.phone));
 
     }
 

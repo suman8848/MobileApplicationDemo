@@ -13,6 +13,7 @@ import com.example.sumankhatiwada.firstapp.day2.DinnerDeciderActivity;
 import com.example.sumankhatiwada.firstapp.day3.ui.implicitintent.ImplicitIntentActivity;
 import com.example.sumankhatiwada.firstapp.day3.ui.login.WalmartLoginActivity;
 import com.example.sumankhatiwada.firstapp.day4.problem1.AutoCompleteTxtView;
+import com.example.sumankhatiwada.firstapp.day5.CurriculumVitaeApp;
 
 /**
  * Created by sumankhatiwada on 4/3/18.
@@ -20,7 +21,7 @@ import com.example.sumankhatiwada.firstapp.day4.problem1.AutoCompleteTxtView;
 
 public class MenuActivity extends ListActivity{
 
-    String [] menu = {"MainActivity","ConverterActivity","DinnerDeciderActivity","WalmartLoginActivity","ImplicitIntent","AutoCompleteTxtView"};
+    String [] menu = {"MainActivity","ConverterActivity","DinnerDeciderActivity","WalmartLoginActivity","ImplicitIntent","AutoCompleteTxtView", "CurriculumVitaeApp"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,6 +45,8 @@ public class MenuActivity extends ListActivity{
                 startActivity(new Intent(MenuActivity.this, ImplicitIntentActivity.class));
             }else if(position==5){
                 startActivity(new Intent(MenuActivity.this, AutoCompleteTxtView.class));
-            }
+            }else if(position==6){
+            startActivity(new Intent(MenuActivity.this, CurriculumVitaeApp.class));
+        }
     }
 }

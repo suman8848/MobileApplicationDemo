@@ -48,7 +48,14 @@
         <activity android:name=".day3.ui.dashboard.clothing.ClothingSectionActivity" />
         <activity android:name=".day3.ui.dashboard.food.FoodSectionActivity" />
         <activity android:name=".day3.ui.dashboard.electronics.ElectronicsSectionActivity" />
-        <activity android:name=".day3.ui.dashboard.electronics.ElectronicItemDisplayActivity"></activity>
+        <activity android:name=".day3.ui.dashboard.electronics.ElectronicItemDisplayActivity" />
+        <activity android:name=".day5.CurriculumVitaeApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -34,7 +34,7 @@
                 android:textColor="@android:color/black"
                 android:layout_toRightOf="@+id/photo"
                 android:layout_alignParentTop="true"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 />
 
             <TextView
@@ -42,6 +42,9 @@
                 android:textColor="@android:color/black"
                 android:layout_height="wrap_content"
                 android:id="@+id/description"
+                android:ellipsize="none"
+                android:maxLines="3"
+
                 android:layout_toRightOf="@+id/photo"
                 android:layout_below="@+id/name"
                 />
