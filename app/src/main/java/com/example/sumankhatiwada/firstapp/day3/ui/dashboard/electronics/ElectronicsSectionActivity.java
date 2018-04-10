@@ -90,7 +90,7 @@ public class ElectronicsSectionActivity extends BaseActivity {
             @Override
             public void onItemClick(ElectronicItem item) {
                 startActivity(new Intent(ElectronicsSectionActivity.this,ElectronicItemDisplayActivity.class).putExtra("electronicItem",item));
-                showToast(ElectronicsSectionActivity.this,"hello"+item.getElectronicItemName());
+                showToast(ElectronicsSectionActivity.this,""+item.getElectronicItemName());
             }
         });
         recyclerView.setAdapter(adapter);

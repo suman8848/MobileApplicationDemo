@@ -20,7 +20,7 @@ public class CurriculumVitaeApp extends BaseActivity {
     ViewPager viewPager;
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-    
+
     @Override
     protected int getContentView() {
         return R.layout.activity_curriculum_vitae_app;
