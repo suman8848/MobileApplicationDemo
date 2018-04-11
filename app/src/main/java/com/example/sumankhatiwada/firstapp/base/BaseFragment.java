@@ -1,7 +1,9 @@
 package com.example.sumankhatiwada.firstapp.base;
 
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.CallSuper;
@@ -15,6 +17,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.sumankhatiwada.firstapp.day6.problem1.domain.WebDomain;
 
 import butterknife.ButterKnife;
 
@@ -102,6 +106,26 @@ public abstract class BaseFragment extends Fragment {
         InputMethodManager inputMethodManager = (InputMethodManager) getActivity().getSystemService(INPUT_METHOD_SERVICE);
         view.requestFocus();
         inputMethodManager.showSoftInput(view, 0);
+    }
+
+
+
+    public void alertDialog(Context context, String message, WebDomain webDomain) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setMessage(message)
+                .setCancelable(true)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        performAlertPostiveClick(webDomain);
+                    }
+                });
+
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
+    protected void performAlertPostiveClick(WebDomain webDomain) {
+
     }
 
 }

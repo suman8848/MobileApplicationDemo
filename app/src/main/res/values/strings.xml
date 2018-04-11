@@ -23,7 +23,7 @@
     <string name="myintroduction">Solution-driven Android Application developer with some years of commercial experience that includes leading technical teams across all phases of software system development from requirements gathering, design, and coding to testing and deployment. Well-versed in mobile-based application development with an ability to perform in-depth analysis of project components and rapidly identify and eliminate software issues.</string>
     <string name="achievements">Built an Android Application for different national clients like Nepal Life Insurance company which includes wire framing designs, code optimization and defining different roles to our team member.</string>
 
-        <string name="workexperience">Built an Android Application by consuming REST API implementing latest technical frameworks for wiring and maintaining clean code principle.
+    <string name="workexperience">Built an Android Application by consuming REST API implementing latest technical frameworks for wiring and maintaining clean code principle.
 
 
             \n<b>Tasks Performed:</b>\n
@@ -32,7 +32,7 @@
 •	Used reactive Android/Java following observer and observable pattern.\n
 •	Used Mockito and Espresso for Unit and UI testing.</string>
 
-    <string name = "contactme"><b>Email: </b> suman.khatiwada@hotmail.com \n <b>Mobile Number:</b> +16417810415 \n <b>Address:</b> 1000N 4th Street Fairfield, Iowa</string>
+    <string name="contactme"><b>Email: </b> suman.khatiwada@hotmail.com \n <b>Mobile Number:</b> +16417810415 \n <b>Address:</b> 1000N 4th Street Fairfield, Iowa</string>
 
 
     <string-array name="hollywoodmovies">
@@ -58,4 +58,7 @@
         <item>Beauty Product 7</item>
         <item>Beauty Product 8</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

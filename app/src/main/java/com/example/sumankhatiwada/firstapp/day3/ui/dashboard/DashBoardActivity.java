@@ -22,6 +22,7 @@ import com.example.sumankhatiwada.firstapp.day3.ui.dashboard.clothing.ClothingSe
 import com.example.sumankhatiwada.firstapp.day3.ui.dashboard.electronics.ElectronicsSectionActivity;
 import com.example.sumankhatiwada.firstapp.day3.ui.dashboard.food.FoodSectionActivity;
 import com.example.sumankhatiwada.firstapp.day3.ui.login.WalmartLoginActivity;
+import com.example.sumankhatiwada.firstapp.day3.ui.login.WalmartLoginRegisterPresenter;
 import com.example.sumankhatiwada.firstapp.day4.problem1.AutoCompleteTxtView;
 
 import butterknife.BindView;
@@ -42,6 +43,8 @@ public class DashBoardActivity extends BaseActivity  {
 
     @BindView(R.id.bottom_navigation)
     BottomNavigationView bottomNavigationView;
+
+    WalmartLoginRegisterPresenter walmartLoginRegisterPresenter= WalmartLoginRegisterPresenter.getInstance();
 
     int products[] = {R.mipmap.ic_electronics,R.mipmap.ic_launcher_burger, R.mipmap.ic_clothing,R.mipmap.ic_beauty};
     String productName[] = {"Electronics","Food","Clothing","Beauty"};
@@ -142,6 +145,7 @@ public class DashBoardActivity extends BaseActivity  {
     }
 
     private void logout() {
+        walmartLoginRegisterPresenter.clearSession();
         startActivity(new Intent(DashBoardActivity.this, WalmartLoginActivity.class));
         finish();
 

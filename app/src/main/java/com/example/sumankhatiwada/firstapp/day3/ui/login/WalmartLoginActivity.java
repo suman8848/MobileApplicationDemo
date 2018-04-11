@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import com.example.sumankhatiwada.firstapp.R;
 import com.example.sumankhatiwada.firstapp.base.BaseActivity;
+import com.example.sumankhatiwada.firstapp.day1.MainActivity;
+import com.example.sumankhatiwada.firstapp.day3.model.Users;
 import com.example.sumankhatiwada.firstapp.day3.ui.dashboard.DashBoardActivity;
 
 import butterknife.BindView;
@@ -45,8 +47,14 @@ public class WalmartLoginActivity extends BaseActivity implements WalmartLoginVi
     @Override
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         super.onViewReady(savedInstanceState, intent);
+        Users users = walmartLoginPresenter.getUserModelSession(this);
+        if (users != null) {
+            startActivity(new Intent(WalmartLoginActivity.this, DashBoardActivity.class).putExtra("username", users.getEmail()));
+            finish();
+        }
         hideSoftKeyboard();
         walmartLoginPresenter.setDefaultUsers();
+
         loginCoordinator.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
 
             @Override
@@ -98,12 +106,14 @@ public class WalmartLoginActivity extends BaseActivity implements WalmartLoginVi
     public void doLoginCheck(String username, String password) {
         Boolean isLoginSuccess = walmartLoginPresenter.doLoginCheck(username, password);
         if (isLoginSuccess) {
+            walmartLoginPresenter.saveUserModelSession(this);
             startActivity(new Intent(WalmartLoginActivity.this, DashBoardActivity.class).putExtra("username", username));
             finish();
         } else {
             showToast(WalmartLoginActivity.this, "Login Invalid");
         }
     }
+
 
 }
 
